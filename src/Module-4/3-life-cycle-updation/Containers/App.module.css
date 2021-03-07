@@ -1,0 +1,31 @@
+.App {
+  text-align: center;
+  background-color: #282c34;
+
+}
+
+.App button {
+  background-color: lightseagreen;
+  color: white;
+  font: inherit;
+  border: 2px solid powderblue;
+  box-shadow: 0 5px 10px lightcyan;
+  margin: 20px;
+  padding: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.App button:hover {
+  background-color: lightblue;
+  color: black;
+}
+
+.App button.Lightcyan {
+  background-color: lightcyan;
+  color: darkred;
+}
+
+.App button.Lightcyan:hover {
+  background-color: lightskyblue;
+}

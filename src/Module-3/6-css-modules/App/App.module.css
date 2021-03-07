@@ -1,0 +1,68 @@
+.App {
+  text-align: center;
+}
+
+.red {
+  color: red;
+}
+
+.italic {
+  font-style: italic;
+}
+
+/* .button { // Method 1
+  background-color: lightseagreen;
+  color: white;
+  font: inherit;
+  border: 2px solid powderblue;
+  box-shadow: 0 5px 10px lightcyan;
+  margin: 20px;
+  padding: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.button:hover { // Method 1
+  background-color: lightblue;
+  color: black;
+}
+
+.button.Lightcyan { // Method 1
+  background-color: lightcyan;
+  color: darkred;
+
+}
+
+.button.Lightcyan:hover { // Method 1
+  background-color: lightskyblue;
+} */
+
+.App button {
+  /* Method 2 */
+  background-color: lightseagreen;
+  color: white;
+  font: inherit;
+  border: 2px solid powderblue;
+  box-shadow: 0 5px 10px lightcyan;
+  margin: 20px;
+  padding: 16px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.App button:hover {
+  /* Method 2 */
+  background-color: lightblue;
+  color: black;
+}
+
+.App button.Lightcyan {
+  /* Method 2 */
+  background-color: lightcyan;
+  color: darkred;
+}
+
+.App button.Lightcyan:hover {
+  /* Method 2 */
+  background-color: lightskyblue;
+}

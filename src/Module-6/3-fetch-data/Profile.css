@@ -1,0 +1,30 @@
+li {
+  padding: 20px;
+  margin: 20px;
+  width: 800px;
+  display: flex;
+  /* justify-content: center; */
+}
+
+img {
+  width: 200px;
+  display: inline-block;
+  margin-right: 50px;
+}
+.male {
+  border: 5px ridge rgb(47, 145, 128);
+  background: rgb(55, 241, 210);
+}
+.female {
+  border: 5px ridge rgb(197, 150, 158);
+  background: pink;
+}
+
+.container-box {
+  display: flex;
+  flex-direction: column;
+    
+  max-width: max-content;
+  margin-right: 50px;
+  /* display: inline-block; */
+}

@@ -1,0 +1,33 @@
+.red {
+    color: red;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.Cockpit button {
+    background-color: lightseagreen;
+    color: white;
+    font: inherit;
+    border: 2px solid powderblue;
+    box-shadow: 0 5px 10px lightcyan;
+    margin: 20px;
+    padding: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.Cockpit button:hover {
+    background-color: lightblue;
+    color: black;
+}
+
+.Cockpit button.Lightcyan {
+    background-color: lightcyan;
+    color: darkred;
+}
+
+.Cockpit button.Lightcyan:hover {
+    background-color: lightskyblue;
+}

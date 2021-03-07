@@ -1,0 +1,5 @@
+High Order Component (HOC)
+- which helps to replace div on which all other componets are wrapped
+
+Simliar Component in React is available under name
+Fragment [Exactly same Functionality] 
