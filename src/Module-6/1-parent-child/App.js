@@ -10,14 +10,13 @@ class App extends Component {
       counter: this.state.counter + 1,
     });
   };
- 
-  render() {
-    console.log(" render called");
 
+  render() {
+    let counter = this.state.counter;
     return (
       <main>
         <Counter
-          counterValue={this.state.counter}
+          counterValue={counter}
           counterValueClick={this.incrementCounterHandler}
         />
       </main>

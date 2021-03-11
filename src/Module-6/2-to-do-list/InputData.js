@@ -17,39 +17,15 @@ class InputData extends Component {
   }
 
   listTogglerHandler(inputValue) {
-    if (this.state.buttonValue == "ADD LIST") {
+    if (inputValue === "") {
+      return;
+    }
+
+    if (this.state.buttonValue === "ADD LIST") {
       this.onSaveInputHandler(inputValue);
     } else {
       this.onUpdateListData(inputValue);
     }
-  }
-
-  onUpdateListData(inputValue) {
-    let listIndex = this.state.listIndexValue;
-    const updatedList = [...this.state.list];
-    updatedList[listIndex] = inputValue;
-    this.setState({
-      list: updatedList,
-      buttonValue: "ADD LIST",
-      inputValue: "",
-      listIndexValue: -1,
-    });
-  }
-
-  onSaveInputHandler(inputValue) {
-    let newList = [...this.state.list, inputValue];
-    this.setState({
-      list: newList,
-      inputValue: "",
-    });
-  }
-
-  onDeleteListHandler(listIndex) {
-    const updatedList = [...this.state.list];
-    updatedList.splice(listIndex, 1);
-    this.setState({
-      list: updatedList,
-    });
   }
 
   onEditListHandler(listIndex) {
@@ -61,20 +37,50 @@ class InputData extends Component {
       listIndexValue: listIndex,
     });
   }
+
+  onSaveInputHandler(inputValue) {
+    let newList = [...this.state.list, inputValue];
+    this.setState({
+      list: newList,
+      inputValue: "",
+    });
+  }
+
+  onUpdateListData(inputValue) {
+    let listIndex = this.state.listIndexValue;
+    const updatedList = [...this.state.list].slice();
+    updatedList[listIndex] = inputValue;
+    this.setState({
+      list: updatedList,
+      buttonValue: "ADD LIST",
+      inputValue: "",
+      listIndexValue: -1,
+    });
+  }
+
+  onDeleteListHandler(listIndex) {
+    const updatedList = [...this.state.list].slice();
+    updatedList.splice(listIndex, 1);
+    this.setState({
+      list: updatedList,
+    });
+  }
   render() {
+    const list = this.state.list;
+    const inputValue = this.state.inputValue;
     return (
       <div>
         <h1>To Do List</h1>
         <input
           type="text"
           onChange={(event) => this.onInputChangeHandler(event)}
-          value={this.state.inputValue}
+          value={inputValue}
         />
-        <button onClick={() => this.listTogglerHandler(this.state.inputValue)}>
+        <button onClick={() => this.listTogglerHandler(inputValue)}>
           {this.state.buttonValue}
         </button>
         <ul>
-          {this.state.list.map((value, index) => (
+          {list.map((value, index) => (
             <li key={index}>
               <h2>{value}</h2>
               <button
@@ -84,7 +90,7 @@ class InputData extends Component {
                 ×
               </button>
               <button onClick={() => this.onEditListHandler(index)}>
-                EDIT{" "}
+                EDIT
               </button>
             </li>
           ))}

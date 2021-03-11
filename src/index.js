@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import "./index.css";
 import "./Module-2/6-free-code-camp/index.css"
 
-import App from "./Module-1/1-life-cycle-clock/App";
+// import App from "./Module-1/1-life-cycle-clock/App";
 
 // import App from "./Module-2/1-interactive-view/App";
 // import App from "./Module-2/2-conditional-rendering/App";
@@ -29,7 +29,9 @@ import App from "./Module-1/1-life-cycle-clock/App";
 
 // import App from "./Module-6/1-parent-child/App";
 // import App from "./Module-6/2-to-do-list/App";
-// import App from "./Module-6/3-fetch-data/App";
+import App from "./Module-6/3-fetch-data-random-user/App";
+// import App from "./Module-6/4-form-control/App";
+// import App from "./Module-6/5-temp-lifting-up-state/App";
 
 ReactDOM.render(
   // Sometimes Rendering Twice due to strict mode

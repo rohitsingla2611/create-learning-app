@@ -1,0 +1,19 @@
+main {
+  margin-top: 100px;
+}
+
+main div {
+  margin: 20px auto;
+  width: fit-content;
+}
+
+fieldset {
+  margin: 0 auto;
+  width: 250px;
+}
+input{
+  width:244px;
+}
+h2,h3{
+  text-align: center;
+}

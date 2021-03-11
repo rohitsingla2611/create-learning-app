@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import FetchData from "./FetchData";
-import './App.css'
+import "./App.css";
+import UserInterface from "./UserInterface";
 
 class App extends Component {
   render() {
     return (
       <main>
-        <FetchData />
+        <UserInterface />
       </main>
     );
   }
