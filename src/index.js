@@ -29,9 +29,12 @@ import "./Module-2/6-free-code-camp/index.css"
 
 // import App from "./Module-6/1-parent-child/App";
 // import App from "./Module-6/2-to-do-list/App";
-import App from "./Module-6/3-fetch-data-random-user/App";
+// import App from "./Module-6/3-fetch-data-random-user/App";
 // import App from "./Module-6/4-form-control/App";
 // import App from "./Module-6/5-temp-lifting-up-state/App";
+import App from './Module-6/6-fetch-data-weather-report/App'
+// import App from './Module-6/7-login-status/App';
+// import App from './Module-6/8-data-pass-without-props/App';
 
 ReactDOM.render(
   // Sometimes Rendering Twice due to strict mode
