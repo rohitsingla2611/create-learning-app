@@ -1,10 +1,9 @@
-section{
-    display: flex;
-    flex-direction: column;
-    margin: 2em auto;
-    max-width: 50%;
+section {
+  display: flex;
+  flex-direction: column;
+  margin: 2em auto;
+  max-width: 50%;
 }
-li{
-    list-style: none;
-
+li {
+  list-style: none;
 }

@@ -12,7 +12,9 @@ const RolesList = () => (
     <h1> Roles List</h1>
     <ol>
       {Object.keys(sourceObj).map((key) => (
-        <li key={key}> {key} {sourceObj[key]}</li>
+        <li key={key}>
+          {key} {sourceObj[key]}
+        </li>
       ))}
     </ol>
   </section>

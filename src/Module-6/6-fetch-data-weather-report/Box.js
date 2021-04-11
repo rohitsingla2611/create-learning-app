@@ -31,6 +31,7 @@ class Box extends Component {
     feelsLike: 0,
     wind: 0,
     humidity: 0,
+    buttonState: true,
   };
   componentDidMount() {
     this.fetchWeatherData("ludhiana");
@@ -107,9 +108,24 @@ class Box extends Component {
     const target = event.target;
     const value = target.value;
 
-    this.setState({
-      inputValue: value,
-    });
+    this.setState(
+      {
+        inputValue: value,
+      },
+      () => {
+        if (this.state.inputValue.length > 3) {
+          this.setState({
+            buttonState: false,
+          });
+          console.log("I am greater than 3");
+          return;
+        }
+        this.setState({
+          buttonState: true,
+        });
+        console.log("I am lesser than 3");
+      }
+    );
   }
 
   onInputSubmitHandler(event) {
@@ -174,7 +190,8 @@ class Box extends Component {
   }
   render() {
     const inputdata = this.state.inputdata;
-
+    const buttonState = this.state.buttonState;
+    console.log("btn sr", buttonState);
     const temp = this.state.temp;
     const secondDayTemp = this.state.secondDayTemp;
     const thirdDayTemp = this.state.thirdDayTemp;
@@ -220,6 +237,7 @@ class Box extends Component {
                     border: "none",
                     outline: "none",
                   }}
+                  disabled={buttonState}
                 >
                   <img src={searchIcon} height="25px" width="25px" alt="" />
                 </button>

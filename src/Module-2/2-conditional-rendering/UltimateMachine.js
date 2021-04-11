@@ -43,7 +43,7 @@ const UltimateMachine = () => {
       {// Conditional rendering with the ternary operator} */}
       {/* {isOn && <OnMessage/>} {// Method 5 } 
       {// Conditional Rendering With The Boolean AND Operator }*/}
-      {!isOn && <OffMessage/>}
+      {!isOn && <OffMessage />}
       <button type="button" onClick={onClickHandler} aria-pressed={isOn}>
         ON / OFF
       </button>

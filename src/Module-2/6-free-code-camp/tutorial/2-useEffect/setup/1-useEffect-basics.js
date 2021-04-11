@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useDebugValue } from "react";
+import React, { useEffect, useState } from "react";
 // by default runs after every re-render
 // cleanup function
 // second parameter
@@ -7,7 +7,7 @@ const UseEffectBasics = () => {
 
   useEffect(() => {
     document.title = `Counter Value: ${counterValue}`;
-    alert("I again Rendered")
+    alert("I again Rendered");
   });
 
   return (

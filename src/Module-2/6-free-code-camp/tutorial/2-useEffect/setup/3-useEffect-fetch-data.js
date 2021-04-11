@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 const url = "https://api.github.com/users";
 
@@ -18,13 +18,12 @@ const UseEffectFetchData = () => {
     <>
       <h1>Github Users</h1>
 
-      
       <ul className="users">
         {users.map((userDetails) => {
           const { id, login, avatar_url, html_url } = userDetails;
           return (
             <li key={id}>
-              <img src={avatar_url} alt={login}/>
+              <img src={avatar_url} alt={login} />
               <div>
                 <h4>{login} </h4>
                 <a href={html_url}>@{login}</a>

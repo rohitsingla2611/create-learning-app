@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from "react";
 
 const ShowHide = () => {
   return <h2>show/hide</h2>;

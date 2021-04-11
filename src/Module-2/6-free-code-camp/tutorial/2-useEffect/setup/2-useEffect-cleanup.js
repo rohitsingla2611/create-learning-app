@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
 // cleanup function
 // second argument
@@ -20,7 +20,7 @@ const UseEffectCleanup = () => {
     return () => {
       window.removeEventListener("resize", heightSizeChange);
     };
-  },[resizeHeight]);
+  }, [resizeHeight]);
 
   useEffect(() => {
     console.log(`Render even **width** any other event ${resizeWidth}`);
@@ -28,7 +28,7 @@ const UseEffectCleanup = () => {
     // return () => {
     //   window.removeEventListener("resize", widthSizeChange);
     // };
-  },[resizeWidth]);
+  }, [resizeWidth]);
   return (
     <>
       <h2 style={{ marginTop: "3rem" }}>Height Size Change</h2>

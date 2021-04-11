@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 
 const rolesList = [
   { id: 1, name: "Internee" },

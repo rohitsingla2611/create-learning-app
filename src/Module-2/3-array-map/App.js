@@ -1,6 +1,6 @@
 import React from "react";
+import "./App.css";
 import DreamRoles from "./DreamRoles";
-import './App.css'
 
 const App = () => {
   return (

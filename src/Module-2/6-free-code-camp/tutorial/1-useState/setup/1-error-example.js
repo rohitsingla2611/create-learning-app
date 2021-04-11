@@ -5,7 +5,7 @@ const ErrorExample = () => {
 
   const onClickHandler = () => {
     errorTitle = "You Failed";
-    alert(errorTitle)
+    alert(errorTitle);
     console.log(errorTitle);
     console.error(errorTitle);
   };

@@ -17,7 +17,7 @@ class App extends Component {
     console.log("componentWillUnmount after clear interval");
   }
 
-   tick = () => {
+  tick = () => {
     console.log("tick Method before setState ");
     this.setState({
       date: new Date(),

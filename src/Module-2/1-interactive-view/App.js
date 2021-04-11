@@ -22,7 +22,7 @@ const App = () => {
       <hr />
       <hr />
       <hr />
-    <SquareNumber/>
+      <SquareNumber />
       <hr />
       <hr />
     </main>
